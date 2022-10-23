@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BFEBFBC3-C77A-4234-BA46-3A07D916D624}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MyAppProject</RootNamespace>
+    <AssemblyName>MyAppProject</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BLL">
+      <HintPath>..\BLL\bin\Debug\BLL.dll</HintPath>
+    </Reference>
+    <Reference Include="DAL">
+      <HintPath>..\BLL\bin\Debug\DAL.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdmin.Designer.cs">
+      <DependentUpon>frmAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAgency.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgency.Designer.cs">
+      <DependentUpon>frmAgency.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAgent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgent.Designer.cs">
+      <DependentUpon>frmAgent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAmount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAmount.Designer.cs">
+      <DependentUpon>frmAmount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmApply.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmApply.Designer.cs">
+      <DependentUpon>frmApply.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCity.Designer.cs">
+      <DependentUpon>frmCity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOverTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOverTime.Designer.cs">
+      <DependentUpon>frmOverTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmList.Designer.cs">
+      <DependentUpon>frmList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoginAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoginAdmin.Designer.cs">
+      <DependentUpon>frmLoginAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoginAgent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoginAgent.Designer.cs">
+      <DependentUpon>frmLoginAgent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoginTenant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoginTenant.Designer.cs">
+      <DependentUpon>frmLoginTenant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManageAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManageAdmin.Designer.cs">
+      <DependentUpon>frmManageAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManageAgent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManageAgent.Designer.cs">
+      <DependentUpon>frmManageAgent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManageTenant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManageTenant.Designer.cs">
+      <DependentUpon>frmManageTenant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMost.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMost.Designer.cs">
+      <DependentUpon>frmMost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEndedDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEndedDate.Designer.cs">
+      <DependentUpon>frmEndedDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProperty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProperty.Designer.cs">
+      <DependentUpon>frmProperty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPropertyAgent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPropertyAgent.Designer.cs">
+      <DependentUpon>frmPropertyAgent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPropertyType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPropertyType.Designer.cs">
+      <DependentUpon>frmPropertyType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProvince.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProvince.Designer.cs">
+      <DependentUpon>frmProvince.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRental.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRental.Designer.cs">
+      <DependentUpon>frmRental.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearch.Designer.cs">
+      <DependentUpon>frmSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSurbub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSurbub.Designer.cs">
+      <DependentUpon>frmSurbub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTenant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTenant.Designer.cs">
+      <DependentUpon>frmTenant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTenantAgent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTenantAgent.Designer.cs">
+      <DependentUpon>frmTenantAgent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAdmin.resx">
+      <DependentUpon>frmAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAgency.resx">
+      <DependentUpon>frmAgency.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAgent.resx">
+      <DependentUpon>frmAgent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAmount.resx">
+      <DependentUpon>frmAmount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmApply.resx">
+      <DependentUpon>frmApply.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCity.resx">
+      <DependentUpon>frmCity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOverTime.resx">
+      <DependentUpon>frmOverTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmList.resx">
+      <DependentUpon>frmList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoginAdmin.resx">
+      <DependentUpon>frmLoginAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoginAgent.resx">
+      <DependentUpon>frmLoginAgent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoginTenant.resx">
+      <DependentUpon>frmLoginTenant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManageAdmin.resx">
+      <DependentUpon>frmManageAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManageAgent.resx">
+      <DependentUpon>frmManageAgent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManageTenant.resx">
+      <DependentUpon>frmManageTenant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMost.resx">
+      <DependentUpon>frmMost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEndedDate.resx">
+      <DependentUpon>frmEndedDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProperty.resx">
+      <DependentUpon>frmProperty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPropertyAgent.resx">
+      <DependentUpon>frmPropertyAgent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPropertyType.resx">
+      <DependentUpon>frmPropertyType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProvince.resx">
+      <DependentUpon>frmProvince.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRental.resx">
+      <DependentUpon>frmRental.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearch.resx">
+      <DependentUpon>frmSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSurbub.resx">
+      <DependentUpon>frmSurbub.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTenant.resx">
+      <DependentUpon>frmTenant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTenantAgent.resx">
+      <DependentUpon>frmTenantAgent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
